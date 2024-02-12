@@ -16,7 +16,7 @@ comment: Sample Intro to o11y course
 
 ---
 
-## 1.0 Observability Ross and Alex Overview
+## 1.0 Observability Overview
 
 ### 1.1 The Early Years aka Single-user Systems
 
