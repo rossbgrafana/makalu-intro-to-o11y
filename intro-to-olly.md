@@ -18,11 +18,11 @@ comment: Sample Intro to o11y course
 
 ## 1.0 Observability Overview
 
-### 1.1 The Early Years aka Single-user Systems
+### 1.1 Single-user Systems
 
 ![Single User](https://github.com/rossbgrafana/makalu-intro-to-o11y/blob/main/s01-images/01-01_the-early-years-single-user.png?raw=true)
 
-In the beginning, computing was for research, science, and government. Computers were large and involved one machine in one location – a mainframe.
+In the beginning, computing was primarily for research, science, and government use. Computers were large and involved one machine in one location – usually a mini-computer or a mainframe.
 
 Really early on, when systems could accommodate only one user and program at a time, they either ran the program successfully or they didn’t. In other words, the only question was, did the program run? Users could answer that themselves by looking at the output from the mainframe.
 
@@ -30,7 +30,7 @@ Really early on, when systems could accommodate only one user and program at a t
 
 ![Single User](https://github.com/rossbgrafana/makalu-intro-to-o11y/blob/main/s01-images/01-02_the-early-years_mainframes.png?raw=true)
 
-Computing spread to businesses, banking, and industry. Multi-user systems being accessed across distances became the norm. Most computing was still on a large system, like a mainframe.
+Soon, Computing spread to businesses, banking, and industry. Multi-user systems being accessed across distances became the norm. Most computing was still on a large system, like a mainframe.
 
 It became necessary for system administrators to be able to find out information like resource usage and availability. They could answer these questions by connecting to the mainframe and using system utilities to query for information, such as the amount of memory currently being used.
 
@@ -44,7 +44,7 @@ At this point, it was relatively easy for sysadmins to understand and figure out
 
 As technology evolved it became less expensive to buy lots of smaller computer systems and network them together. This type of system was more flexible and configurable than a mainframe, but it was also more complex. 
 
-Programs started to be called “applications.” Instead of users all accessing a single program that was running on one computer, parts of the application (now called “services”) were spread across separate computers (called “servers”). 
+Programs started to be called “applications.” Instead of users all accessing a single program that was running on one computer, parts of the application (now called “services”) were often spread across separate computers (called “servers”). 
 
 Complexity was growing, but you could still draw a relatively simple diagram of all of the system parts, whether services or servers.
 
@@ -64,7 +64,7 @@ At this point, if you could think of something you wanted to measure, record, or
 
 ![Single User](https://github.com/rossbgrafana/makalu-intro-to-o11y/blob/main/s01-images/01-05_the-early-years_virtualization.png?raw=true)
 
-Virtualization enabled you to deploy your servers and services with more flexibility by aggregating all your physical resources into one big pool that you could then allocate as you wanted. You could almost instantly create new virtual servers and deploy services to them as needed, placing VMs across just parts of physical servers or across multiple physical servers.
+Virtualization (runnning software-only copies of an Operating System in a Virtual Machine or VM) enabled you to deploy your servers and services with more flexibility by aggregating all your physical resources into one big pool of resources.  That pool could then be allocated as you wanted or needed. You could almost instantly create new virtual servers and deploy services to them as needed, placing VMs across just parts of physical servers or across multiple physical servers.
 
 This flexibility was very useful, but came at the cost of even more complexity and increased reliance on monitoring and logging data. However, it was still possible to monitor how many servers and services were running, where, and how well, when compared to predetermined, expected measures.
 
@@ -74,11 +74,15 @@ This flexibility was very useful, but came at the cost of even more complexity a
 
 Today, many applications are being split into even smaller parts, known as “microservices.” These microservices are often run in containers. Containers are like virtual machines, but require even fewer resources to run, are faster to deploy or remove, and offer even greater flexibility in how and where they are run.
 
+<img align="right" width="250" height="250" src="https://github.com/rossbgrafana/makalu-intro-to-o11y/blob/main/s01-images/01-06-A_cloud-of-insects-diagram.png?raw=true">
+
 Containers and microservices allow changes to the application infrastructure to be automated, spinning up and shutting down components as needed to handle the application load.
 
-This means that there are more “moving parts” in today’s software systems than ever before. Systems are so complex and change so quickly that it has become impossible to draw an accurate system architecture diagram. In the extreme case, architecture diagrams can end up looking something like a cloud of insects.
+This means that there are more “moving parts” in today’s software systems than ever before. Those moving parts are now also interdependent in ways not always easily understood or observed.  Systems are so complex and change so quickly that it has become impossible to draw an accurate system architecture diagram. In the extreme case, architecture diagrams can end up looking something like a cloud of insects, such as you see in the figure to the right.
 
-Both monitoring and logging presume you know the right questions to ask and have configured your application and platform to give you that data. With microservices, containers, and automated adjustments to infrastructure based on need, you don’t always know what to ask, much less whether a measurement tells you anything useful, because you aren’t always certain what standard to measure against.
+Both monitoring and logging presume you know the right questions to ask and have configured your application and platform to give you that data. 
+
+With microservices, containers, and automated adjustments to infrastructure based on need, you don’t always know what to ask, much less whether a measurement tells you anything useful, because you aren’t always certain what standard to measure against.
 
 ## 2.0 From Monitoring to Observability
 
@@ -108,7 +112,7 @@ All to often, Monitoring is:
 
 Monitoring is essentially reading or viewing information from a system or component and interpreting that data to mean something.
 
-Aside from standard monitoring, there are a number of additional monitoring instances, such as these taken from the Google SRE book:
+Aside from standard monitoring, there are a number of additional monitoring scenarios, such as these taken from the [Google SRE Book Chapter 6](https://sre.google/sre-book/monitoring-distributed-systems/):
 
 * White-box monitoring Monitoring based on metrics exposed by the internals of the system, including logs, interfaces like the Java Virtual Machine Profiling Interface, or an HTTP handler that emits internal statistics.
 * Black-box monitoring Testing externally visible behavior as a user would see it.
@@ -120,11 +124,9 @@ Aside from standard monitoring, there are a number of additional monitoring inst
 
 At it's heart, Observability means you can do the following things easily:
 
-* Gather - Gathering data is the practice of collecting and correlating as much information as needed about a system or application as it is running.
-* Explore - Having the ability to explore collected data allows for the correlation of multiple streams and types of collected data to answer new or yet-unanswered questions.
-* Insight - Having a view of multiple sets of data in configurable and adjustable ways across a platform enables unique views into issues and helps not only answer, but ASK unanticipated questions.
-
-Systems are so complex and change so quickly that it has become impossible to draw an accurate system architecture diagram. In the extreme case, architecture diagrams can end up looking something like a cloud of insects.
+* **Gather** - Gathering data is the practice of collecting and correlating as much information as needed about a system or application as it is running.
+* **Explore** - Having the ability to explore collected data allows for the correlation of multiple streams and types of collected data to answer new or yet-unanswered questions.
+* **Insight** - Having a view of multiple sets of data in configurable and adjustable ways across a platform enables unique views into issues and helps not only answer, but ASK unanticipated questions.
 
 Both metrics monitoring and logging presume you know the right questions to ask and have configured your application and platform to give you that data. With microservices, containers, and automated adjustments to infrastructure based on need, you don’t always know what to ask, much less whether a measurement tells you anything useful, because you aren’t always certain what standard to measure against.
 
