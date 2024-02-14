@@ -14,11 +14,16 @@ comment: Sample Intro to o11y course
 4. Why is observability so important?
 5. What is Grafana's role in all of this?
 
+
+<h4>Welcome to the course!</h4>
+
+Please feel free to navigate through the course either sequentially by using the **Forward** and **Back** arrows on the navigation panel at the bottom of the interface, or by clicking on the **Table of Contents** in the left panel.
+
 ---
 
 ## 1.0 Observability Overview
 
->        <h4>**Please click the Forward button (at the bottom right) to advance.**</h4>
+>   <h4>**Please click the Forward button (at the bottom of each page) to advance.**</h4>
 
 ### 1.1 Single-user Systems
 
@@ -101,7 +106,7 @@ Which of the following describes following a system request as it travels throug
 
 ## 2.0 From Monitoring to Observability
 
->    <h4>**Please click the Forward button (at the bottom right) to advance.**</h4>
+>   <h4>**Please click the Forward button (at the bottom of each page) to advance.**</h4>
 
 ### 2.1 What is Monitoring?
 
