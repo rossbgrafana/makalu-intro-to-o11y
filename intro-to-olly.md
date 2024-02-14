@@ -16,7 +16,10 @@ comment: Sample Intro to o11y course
 
 <h4>Welcome to the course!</h4>
 
-Please feel free to navigate through the course either sequentially by using the **Forward** and **Back** arrows on the navigation panel at the bottom of the interface, or by clicking on the **Table of Contents** in the left panel.
+Please feel free to navigate through the course by clicking on the **Table of Contents** in the left panel, sequentially by using the **Forward** and **Back** arrows on the navigation panel at the bottom of the interface, as you see indicated in red on the figure below.
+
+
+![Single User](https://github.com/rossbgrafana/makalu-intro-to-o11y/blob/main/images/00_overall-nav-bar-example_long.png?raw=true)
 
 ---
 
