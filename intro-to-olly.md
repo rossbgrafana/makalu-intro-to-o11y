@@ -14,7 +14,6 @@ comment: Sample Intro to o11y course
 4. Why is observability so important?
 5. What is Grafana's role in all of this?
 
-
 <h4>Welcome to the course!</h4>
 
 Please feel free to navigate through the course either sequentially by using the **Forward** and **Back** arrows on the navigation panel at the bottom of the interface, or by clicking on the **Table of Contents** in the left panel.
@@ -234,3 +233,17 @@ In this section we'll run a command and then inspect the output.
     <pre>
     /Users/rossb/github
     </pre>
+
+
+1. Run an listing of the current directory and look at the output.
+
+    `$ ls -l`
+
+<!-- style="background-color: black; color: white; font-family: monospace;"-->
+    <pre>
+    drwxr-xr-x   3 rossb  staff       96 Aug  9  2023 Recovery Codes<br>
+    drwxr-xr-x@ 21 rossb  staff      672 Sep 28 13:51 cx-best-practice-guides<br>
+    drwxr-xr-x@ 16 rossb  staff      512 Oct 10 16:11 grafana-base-setup<br>
+    drwxr-xr-x@ 22 rossb  staff      704 Jan 31 09:32 intro-to-mltp<br>
+    -rw-r--r--@  1 root   staff  8390443 Feb 12 17:27 intro-to-o11y.zip<br>
+    drwxr-xr-x@ 10 rossb  staff      320 Feb 12 17:25 makalu-intro-to-o11y</pre>
