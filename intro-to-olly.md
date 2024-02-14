@@ -18,7 +18,7 @@ comment: Sample Intro to o11y course
 
 ## 1.0 Observability Overview
 
-        <h4>**Please click the Forward button to advance.**</h4>
+>        <h4>**Please click the Forward button (at the bottom right) to advance.**</h4>
 
 ### 1.1 Single-user Systems
 
@@ -66,7 +66,9 @@ At this point, if you could think of something you wanted to measure, record, or
 
 ![Single User](https://github.com/rossbgrafana/makalu-intro-to-o11y/blob/main/s01-images/01-05_the-early-years_virtualization.png?raw=true)
 
-Virtualization (runnning software-only copies of an Operating System in a Virtual Machine or VM) enabled you to deploy your servers and services with more flexibility by aggregating all your physical resources into one big pool of resources.  That pool could then be allocated as you wanted or needed. You could almost instantly create new virtual servers and deploy services to them as needed, placing VMs across just parts of physical servers or across multiple physical servers.
+Virtualization (runnning software-only copies of an Operating System in a Virtual Machine or VM) enables you to deploy your servers and services with more flexibility by aggregating all your physical resources into one big pool of resources.  
+
+That pool could then be allocated as you wanted or needed. You could almost instantly create new virtual servers and deploy services to them as needed, placing a single VM on a virtualization host, multiple VMs on the same host, or VMs across just parts of physical servers, or even across multiple physical servers.
 
 This flexibility was very useful, but came at the cost of even more complexity and increased reliance on monitoring and logging data. However, it was still possible to monitor how many servers and services were running, where, and how well, when compared to predetermined, expected measures.
 
@@ -86,9 +88,20 @@ Both monitoring and logging presume you know the right questions to ask and have
 
 With microservices, containers, and automated adjustments to infrastructure based on need, you don’t always know what to ask, much less whether a measurement tells you anything useful, because you aren’t always certain what standard to measure against.
 
+### End of Section Quiz
+
+Which of the following describes following a system request as it travels through multiple components of your application?
+
+[( )] Ollying
+[( )] Brokering
+[(X)] Tracing
+[( )] Measuring
+[( )] Chunking
+
+
 ## 2.0 From Monitoring to Observability
 
-        <h4>**Please click the Forward button to advance.**</h4>
+>    <h4>**Please click the Forward button (at the bottom right) to advance.**</h4>
 
 ### 2.1 What is Monitoring?
 
@@ -171,13 +184,48 @@ Metrics, logs, and traces have been called the three pillars of observability, b
 
 A tool set like this gives you a way to query the data you collect so you are able to locate and fix problems you would have had much more difficulty finding otherwise; this reduces the time needed to fix the problems.
 
-# Section Quiz
+### End of Section Quiz
 
-Which of the following is the best choice?
+Which of the following describes following a system request as it travels through multiple components of your application?
 
-[( )] Choice 1
-[( )] Choice 1
-[(X)] Right Answer
-[( )] Choice 1
-[( )] Choice 1
+[( )] Ollying
+[( )] Brokering
+[(X)] Tracing
+[( )] Measuring
+[( )] Chunking
 
+# End of Course Quiz
+
+Which of the following describes following a system request as it travels through multiple components of your application?
+
+[( )] Ollying
+[( )] Brokering
+[(X)] Tracing
+[( )] Measuring
+[( )] Chunking
+
+# Command Line Session Examples
+
+In this section we'll run a command and then inspect the output.
+
+1. Run the `ls -l` command against the current directory and look at the output.
+
+<!-- style="background-color: black; color: yellow; font-family: monospace;"-->
+> $ ls -l 
+    <!-- style="background-color: black; color: white; font-family: monospace;"-->
+    <pre>
+    drwxr-xr-x   3 rossb  staff       96 Aug  9  2023 Recovery Codes<br>
+    drwxr-xr-x@ 21 rossb  staff      672 Sep 28 13:51 cx-best-practice-guides<br>
+    drwxr-xr-x@ 16 rossb  staff      512 Oct 10 16:11 grafana-base-setup<br>
+    drwxr-xr-x@ 22 rossb  staff      704 Jan 31 09:32 intro-to-mltp<br>
+    -rw-r--r--@  1 root   staff  8390443 Feb 12 17:27 intro-to-o11y.zip<br>
+    drwxr-xr-x@ 10 rossb  staff      320 Feb 12 17:25 makalu-intro-to-o11y</pre>
+
+2.  Now run the `pwd` command to print the current directory.
+
+<!-- style="background-color: black; color: yellow; font-family: monospace;"-->
+> $ pwd 
+    <!-- style="background-color: black; color: white; font-family: monospace;"-->
+    <pre>
+    /Users/rossb/github
+    </pre>
