@@ -18,6 +18,8 @@ comment: Sample Intro to o11y course
 
 ## 1.0 Observability Overview
 
+        <h4>**Please click the Forward button to advance.**</h4>
+
 ### 1.1 Single-user Systems
 
 ![Single User](https://github.com/rossbgrafana/makalu-intro-to-o11y/blob/main/s01-images/01-01_the-early-years-single-user.png?raw=true)
@@ -86,6 +88,8 @@ With microservices, containers, and automated adjustments to infrastructure base
 
 ## 2.0 From Monitoring to Observability
 
+        <h4>**Please click the Forward button to advance.**</h4>
+
 ### 2.1 What is Monitoring?
 
 ![Single User](https://github.com/rossbgrafana/makalu-intro-to-o11y/blob/main/s02-images/02-01_what-is-monitoring.png?raw=true)
@@ -94,9 +98,9 @@ Monitoring is essentially reading or viewing information from a system or compon
 
 Aside from standard monitoring, there are a number of additional monitoring instances, such as these taken from the Google SRE book:
 
-* White-box monitoring Monitoring based on metrics exposed by the internals of the system, including logs, interfaces like the Java Virtual Machine Profiling Interface, or an HTTP handler that emits internal statistics.
-* Black-box monitoring Testing externally visible behavior as a user would see it.
-* Root cause A defect in a software or human system that, if repaired, instills confidence that this event won’t happen again in the same way. 
+* **White-box monitoring** - Monitoring based on metrics exposed by the internals of the system, including logs, interfaces like the Java Virtual Machine Profiling Interface, or an HTTP handler that emits internal statistics.
+* **Black-box monitoring** - Testing externally visible behavior as a user would see it.
+* **Root cause** A defect in a software or human system that, if repaired, instills confidence that this event won’t happen again in the same way. 
 
 All to often, Monitoring is: 
 
@@ -105,6 +109,8 @@ All to often, Monitoring is:
 * Wondering about ones you can't see directly, but know there's an issue
 * Setting way too many alerts
 * Not being able to determine root causes for complex issues
+
+Moving to Observability means not just being passive about what's happening, but starting to be proactive and ask important "hmm, what if..." kind of questions.
 
 ### 2.2 Moving from Monitoring to Observability
 
@@ -165,4 +171,13 @@ Metrics, logs, and traces have been called the three pillars of observability, b
 
 A tool set like this gives you a way to query the data you collect so you are able to locate and fix problems you would have had much more difficulty finding otherwise; this reduces the time needed to fix the problems.
 
+# Section Quiz
+
+Which of the following is the best choice?
+
+[( )] Choice 1
+[( )] Choice 1
+[(X)] Right Answer
+[( )] Choice 1
+[( )] Choice 1
 
