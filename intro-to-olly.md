@@ -7,7 +7,7 @@ comment: Sample Intro to o11y course
 
 -->
 
-# Introduction to Observability DEMO
+# Introduction to Observability 
 1. A bit of history
 2. From Monitoring to Observability
 3. An overview of metrics logs and traces.
