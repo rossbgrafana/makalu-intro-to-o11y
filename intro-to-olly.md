@@ -221,8 +221,9 @@ In this section we'll run a command and then inspect the output.
 1. Run the `ls -l` command against the current directory and look at the output.
 
 <!-- style="background-color: black; color: yellow; font-family: monospace;"-->
-> $ ls -l 
-    <!-- style="background-color: black; color: white; font-family: monospace;"-->
+> $ ls -l
+
+<!-- style="background-color: black; color: white; font-family: monospace;"-->
     <pre>
     drwxr-xr-x   3 rossb  staff       96 Aug  9  2023 Recovery Codes<br>
     drwxr-xr-x@ 21 rossb  staff      672 Sep 28 13:51 cx-best-practice-guides<br>
