@@ -47,3 +47,17 @@ In this section we'll run a command and then inspect the output.
     
 ### Sub-section or Page Title (###)
       Content
+
+# Course Title (#)
+  
+## Section Title (##)
+    
+### Sub-section or Page Title (###)
+      Content
+
+# Course Title (#)
+  
+## Section Title (##)
+    
+### Sub-section or Page Title (###)
+      Content
