@@ -39,7 +39,9 @@ In this section we'll run a command and then inspect the output.
     -rw-r--r--@  1 root   staff  8390443 Feb 12 17:27 intro-to-o11y.zip<br>
     drwxr-xr-x@ 10 rossb  staff      320 Feb 12 17:25 makalu-intro-to-o11y</pre>
 
-    # Course Title (#)
+
+
+# Course Title (#)
   
 ## Section Title (##)
     
